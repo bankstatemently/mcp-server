@@ -16,7 +16,7 @@ The Bankstatemently MCP server implements the [Model Context Protocol](https://m
 
 **Authentication:** API key via `Authorization: Bearer <key>` or `X-API-Key` header.
 
-**Supports 500+ banks** across the US, UK, Singapore, Australia, Hong Kong, Malaysia, and more.
+Works with **any bank worldwide** — upload a statement and the server handles detection automatically. A growing set of banks are independently accuracy-verified with published benchmark results.
 
 ---
 
