@@ -28,6 +28,14 @@ Works with **any bank worldwide** — upload a statement and the server handles 
 | `get_statement` | Retrieve parsed data for a previously uploaded document |
 | `list_statements` | Browse previously parsed statements |
 | `get_credits` | Check your remaining credit balance |
+| `evaluate_benchmark` | Score parsed transactions against the [BSPB](https://github.com/bankstatemently/bspb) benchmark ground truth. Free, no credits consumed. |
+
+## Resources
+
+| Resource | Description |
+|----------|-------------|
+| `benchmark://catalog` | Browse all 15 benchmark statements with difficulty, country, currency, and challenges |
+| `benchmark://statements/{id}` | Metadata for a specific statement (e.g. `benchmark://statements/bsb-001`) |
 
 ---
 
@@ -77,11 +85,19 @@ Once connected, you can ask your AI agent:
 
 > *"How much did I spend on subscriptions last month? Here's my bank statement."*
 
+### Benchmark
+
+> *"Read the benchmark catalog and tell me what statements are available."*
+
+> *"Evaluate my parsed transactions against bsb-001."*
+
+> *"I parsed 12 transactions from the Singapore benchmark statement. Score my results and tell me what I got wrong."*
+
 ---
 
 ## Pricing
 
-1 credit = 1 PDF page. Credits are available as one-time packs or monthly subscriptions.
+1 credit = 1 PDF page. Credits are available as one-time packs or monthly subscriptions. Benchmark evaluation is free.
 
 → [View pricing](https://bankstatemently.com/pricing)
 
@@ -92,5 +108,6 @@ Once connected, you can ask your AI agent:
 - Website: [bankstatemently.com](https://bankstatemently.com)
 - MCP docs: [bankstatemently.com/developers/mcp](https://bankstatemently.com/developers/mcp)
 - API docs: [bankstatemently.com/developers/api](https://bankstatemently.com/developers/api)
+- Benchmark dataset: [github.com/bankstatemently/bspb](https://github.com/bankstatemently/bspb)
 - REST API spec: [github.com/Bankstatemently/api](https://github.com/Bankstatemently/api)
 - Support: [help@bankstatemently.com](mailto:help@bankstatemently.com)
